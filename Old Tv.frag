@@ -1,6 +1,6 @@
 //https://www.shadertoy.com/view/ft33RS
 
-loat rect(vec2 uv, float start, float end, float down, float top, float blur)
+float rect(vec2 uv, float start, float end, float down, float top, float blur)
 {
     float res = smoothstep(start-blur, start+blur, uv.x);
     float res1 = smoothstep(end+blur, end-blur, uv.x);
